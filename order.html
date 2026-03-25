@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="navbar">
+    <h2>🍽 Restaurant</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="reservation.html">Reserve</a>
+        <a href="order.html">Order</a>
+        <a href="billing.html">Bill</a>
+        <a href="payment.html">Pay</a>
+    </div>
+</div>
+<body>
+
+<h1>Place Order</h1>
+
+<div class="container">
+    <div class="card">
+
+        <input type="number" placeholder="Table Number">
+
+        <select id="menu">
+            <option value="200">Pizza - ₹200</option>
+            <option value="150">Burger - ₹150</option>
+            <option value="180">Pasta - ₹180</option>
+        </select>
+
+        <input type="number" id="qty" placeholder="Quantity">
+
+        <button onclick="addItem()">Add Item</button>
+
+        <h3>Order Summary</h3>
+        <ul id="orderList"></ul>
+
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

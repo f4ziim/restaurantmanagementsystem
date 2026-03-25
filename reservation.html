@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<div class="navbar">
+    <h2>🍽 Restaurant</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="reservation.html">Reserve</a>
+        <a href="order.html">Order</a>
+        <a href="billing.html">Bill</a>
+        <a href="payment.html">Pay</a>
+    </div>
+</div>
+<body>
+
+<h1>Table Reservation</h1>
+
+<div class="container">
+    <div class="card">
+
+        <h3>Customer Details</h3>
+        <input placeholder="Name">
+        <input placeholder="Phone">
+        <input placeholder="Email">
+
+        <h3>Reservation Details</h3>
+        <input type="date">
+        <input type="time">
+        <input type="number" placeholder="No of People">
+
+        <h3>Select Table</h3>
+        <div class="tables">
+            <div class="table available">T1</div>
+            <div class="table reserved">T2</div>
+            <div class="table available">T3</div>
+        </div>
+
+        <button onclick="reserve()">Reserve</button>
+
+    </div>
+</div>
+
+<script>
+function reserve() {
+    alert("Reservation Saved!");
+}
+</script>
+
+</body>
+</html>
